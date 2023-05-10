@@ -1,0 +1,11 @@
+<h3>Enter following details to Create CV</h3>
+
+<form [formGroup]="checkoutForm" (ngSubmit)="onSubmit()">
+
+    <div><label for="firstName">First Name</label><input id="firstName" type="text" formControlName="firstName"></div>
+    <div><label for="lastName">Last Name</label><input id="lastName" type="text" formControlName="lastName"></div>
+    <div><label for="designation">Designation</label><input id="designation" type="text" formControlName="designation"></div>
+    <div><label for="currentCompany">Current Company</label><input id="currentCompany" type="text" formControlName="currentCompany"></div>
+    <div><label for="yearsOfExperience">Years Of Experince</label><input id="yearsOfExperience" type="text" formControlName="yearsOfExperience"></div>
+    <button class="button" type="submit">Create Cv</button>
+</form>
